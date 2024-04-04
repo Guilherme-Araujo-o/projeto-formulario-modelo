@@ -1,0 +1,120 @@
+body{
+    height: 100vh;
+    width:100vw;
+}
+
+main{
+    height: 100vh;
+    width:100%;
+   display: flex;
+}
+
+header{
+    width: 50px;
+    position: absolute;
+    left: 56px;
+    top: 65px;
+   
+    /*aplicar porcentagem*
+    o relarive deixa restos no heder por isso o espaço que tinha ficado no heder*/
+}
+
+
+.img-mobile{
+   display: block;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 107px;
+   
+}
+
+.square1{
+    height: 100vh;
+    width:100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(/base-apparel-coming-soon-master/images/bg-pattern-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.conteudo{
+    height: 400px;
+    width: 500px;
+}
+.conteudo .titulo{
+    font-size: 60px;
+    text-align: center;
+    text-align: left;
+    width: 50%;
+    margin-bottom:35px;
+    color: var(--color-text-down);
+   
+}
+
+.conteudo .titulo .first-text{
+    color: var(--color-h1-span-emailText);
+}
+
+.conteudo .texto{
+    font-size: var(--font-text-button-email);
+    color: var(--color-h1-span-emailText);
+    line-height: 28px;
+}
+
+.square2{
+    width: 450px;
+}
+
+.square2 .email{
+    width: 107%;
+    margin: 35px 35px 35px 0px;
+    padding: 15px;
+    border: 1px solid rgb(0, 0, 0, 0.3);
+    border-radius: 34px;
+    font-size: var(--font-text-button-email);
+}
+
+::placeholder{
+    color: var(--color-h1-span-emailText);
+}
+
+.square2 button{
+    height: 52px;
+    width: 98px;
+    color: white;
+    border-radius: 25px;
+    border: 0px;
+    position: relative;
+    left: 398px;
+    bottom: 86px;
+    font-size: var(--font-text-button-email);
+    background: var(--color-botton);
+    transition: background-color 0.3s ease;
+}
+
+.square2 button:hover{
+    cursor: pointer;
+    border: 0.1px solid rgba(0, 0, 0, 0.1);
+    background-color: var(--color-botton);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.square3{
+    height: 100vh;
+    width:50vw;
+    overflow: hidden;
+}
+
+
+
+
+
+
+/*{
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+    }*/
+
