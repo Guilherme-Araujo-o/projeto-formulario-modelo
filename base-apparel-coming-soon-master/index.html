@@ -7,18 +7,14 @@
     <link rel="stylesheet" href="./src/css/reset.css" />
     <link rel="stylesheet" href="./src/css/Media-Queries.css">
     <title>Projeto-Mulher</title>
+    <script src="./js/index.js" defer></script>
   </head>
   <body>
-    <header>
-      <img src="./images/logo.svg" alt="logo-site" />
-    </header>
-    <picture>
-      <source media="(min-width:475px)" srcset="/base-apparel-coming-soon-master/images/hero-mobile.jpg/500">
-      <img class="img-mobile" src="/base-apparel-coming-soon-master/images/hero-mobile.jpg" alt="img-mulher-mobile">
-    </picture>
-    <main>
+    <main class="container">
+      <header>
+        <img class="logo" src="./images/logo.svg" alt="logo-site" />
+      </header>
       <section class="square1">
-        <article class="conteudo">
           <h1 class="titulo">
             <span class="first-text"> WE´RE </span> COMING SOON
           </h1>
@@ -27,16 +23,19 @@
             our new fashion store. Add your email below to stay up-to-date with
             announcements and our launch deals. Email Address
           </span>
-          <div class="square2">
-            <form>
-              <input class="email" type="email" placeholder="email address" />
-              <button>></button>
+            <form class="form">
+              <input class="email" type="email" placeholder="email address"/>
+              <button class="btn">
+                <img src="./images/icon-arrow.svg" alt="imagem-de-arco">
+              </button>
             </form>
           </section>
-        </article>
-    </div>
-      <section class="square3">
-        <img src="./images/hero-desktop.jpg" alt="foto-mulher-modelo" />
+      <section class="square2">
+        <picture>
+          <source media="(max-width:425px)" srcset="./images/hero-mobile.jpg">
+          <img src="./images/hero-desktop.jpg" alt="foto-mulher-modelo" />
+        </picture>
+      
       </section>
     </main>
   </body>

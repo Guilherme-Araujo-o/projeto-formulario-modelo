@@ -1,57 +1,44 @@
 body{
     height: 100vh;
-    width:100vw;
-}
-
-main{
-    height: 100vh;
-    width:100%;
-   display: flex;
+    max-width:1440px;
+    margin: 0 auto;
 }
 
 header{
-    width: 50px;
-    position: absolute;
-    left: 56px;
-    top: 65px;
-   
-    /*aplicar porcentagem*
-    o relarive deixa restos no heder por isso o espaço que tinha ficado no heder*/
+   padding: 30px;
+   grid-area: header;
 }
 
-
-.img-mobile{
-   display: block;
+.container{
+    display: grid;
+    grid-template-columns: 1fr auto;
+    grid-template-rows: auto 1fr;
+    grid-template-areas: "header square2"
+                         "square1 square2";
     width: 100%;
-    background-repeat: no-repeat;
-    background-size: cover;
-    margin-top: 107px;
-   
+    height: 100%;
 }
 
 .square1{
-    height: 100vh;
-    width:100%;
+  
+    height:100%;
+    background-position: center;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
+    flex-direction: column;
+    grid-area: square1;
     justify-content: center;
     background-image: url(/base-apparel-coming-soon-master/images/bg-pattern-desktop.svg);
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-.conteudo{
-    height: 400px;
-    width: 500px;
-}
-.conteudo .titulo{
-    font-size: 60px;
+ .titulo{
+    letter-spacing: 5px; /*espaçamento do titulo lateral entre eles*/
+    max-width: 500px;
+    font-size: 3.75rem;
     text-align: center;
-    text-align: left;
-    width: 50%;
-    margin-bottom:35px;
     color: var(--color-text-down);
-   
 }
 
 .conteudo .titulo .first-text{
@@ -61,15 +48,20 @@ header{
 .conteudo .texto{
     font-size: var(--font-text-button-email);
     color: var(--color-h1-span-emailText);
-    line-height: 28px;
+   /* line-height: 28px;*/
+    line-height:1.75rem;
+    width: 3rem;
+    height: 3rem;
 }
 
 .square2{
-    width: 450px;
+   grid-area: square2;
+   
 }
 
 .square2 .email{
-    width: 107%;
+    /*width: 107%;*/
+    width: 30.1em;
     margin: 35px 35px 35px 0px;
     padding: 15px;
     border: 1px solid rgb(0, 0, 0, 0.3);
@@ -82,14 +74,17 @@ header{
 }
 
 .square2 button{
-    height: 52px;
-    width: 98px;
+   /* height: 52px;3.3
+    width: 98px;6*/
+    height:3.3em;
+    width:6em;
     color: white;
     border-radius: 25px;
+   
     border: 0px;
     position: relative;
-    left: 398px;
-    bottom: 86px;
+    left: 85.8%;/* 398px antes era px agora virou porcentagem*/
+    bottom: 5.4rem; /* 86px antes era px agora virou porcentagem /// obs: a porcentagem n funcionou*/
     font-size: var(--font-text-button-email);
     background: var(--color-botton);
     transition: background-color 0.3s ease;
@@ -103,8 +98,8 @@ header{
 }
 
 .square3{
-    height: 100vh;
-    width:50vw;
+    height: 100vh;/*porcentagem pai*/
+    width:50vw;/*porcentagem pai*/
     overflow: hidden;
 }
 
